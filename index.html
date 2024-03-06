@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Fraunces:ital,opsz,wght@0,9..144,900;1,9..144,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          fontFamily: {
+            fraunces: ["Fraunces", "sans-serif"],
+            barlow: ["Barlow", "sans-serif"],
+          },
+          extend: {
+            colors: {
+              primary: "#333D4B",
+              secondary: "#0E8784",
+              headers: "#83888F",
+              bkround: "#FEFCF7",
+              nums: "#FDD6BA",
+            },
+            backgroundImage: {
+              home: "url('images/home.jpg')",
+            },
+          },
+        },
+      };
+    </script>
+    <title>Home</title>
+  </head>
+  <body class="bg-bkround px-6 md:px-10 xl:px-20">
+    <header
+      class="flex items-center justify-between font-barlow text-[12px] text-headers pt-8 lg:pt-10 xl:pt-11 font-bold leading-[15px]"
+    >
+      <img
+        src="images/logo.png"
+        alt="logo"
+        class="w-[136px] h-[18px] md:w-[236px] md:h-[26px]"
+      />
+      <nav class="flex items-center justify-between">
+        <img src="images/menu.svg" alt="menu" class="sm:hidden" />
+        <ul class="hidden sm:flex gap-[33px]">
+          <li><a href=index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT US</a></li>
+          <li><a href="#">CREATE YOUR PLAN</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section
+      class="bg-home bg-cover bg-no-repeat text-bkround mt-10 md:mt-11 px-6 py-10 md:pl-14 md:py-[104px] xl:pl-[86px] xl:py-[117px] rounded-[10px]"
+    >
+      <div class="text-center sm:text-start">
+        <h1
+          class="font-fraunces text-[40px] leading-[40px] md:text-[48px] md:leading-[48px] xl:text-[72px] xl:leading-[72px] md:w-[329px] xl:w-[493px]"
+        >
+          Great coffee made simple.
+        </h1>
+        <p
+          class="font-barlow opacity-80 leading-[26px] xl:w-[394px] md:w-[369px] mt-6 mb-10 xl:mb-14 xl:mt-8"
+        >
+          Start your mornings with the world’s best coffees. Try our expertly
+          curated artisan coffees from our best roasters delivered directly to
+          your door, at your schedule.
+        </p>
+        <button
+          class="font-fraunces leading-[25px] text-[18px] bg-secondary rounded-md px-[31px] py-[15px] hover:bg-[#66D2CF] disabled:bg-[#E2DEDB]"
+        >
+          Create your plan
+        </button>
+      </div>
+    </section>
+    <section
+      class="font-fraunces text-primary mt-[120px] md:mt-36 xl:mt-[136px]"
+    >
+      <h2
+        class="h-[90px] md:h-[60px] xl:h-[70px] text-[40px] md:text-[96px] xl:text-[150px] leading-[72px] text-transparent bg-clip-text bg-gradient-to-b from-headers/50 to-[#FEFCF7] text-center"
+      >
+        our collection
+      </h2>
+      <div class="grid xl:grid-cols-4 gap-12 xl:gap-7">
+        <div
+          class="text-center flex flex-col md:flex-row xl:flex-col items-center justify-center"
+        >
+          <img
+            src="images/expresso.png"
+            alt="coffee"
+            class="xl:mb-[71px] md:w-[50%]"
+          />
+          <div class="text-center md:text-start xl:text-center">
+            <h3 class="text-[24px] leading-6 xl:leading-8 mb-6">
+              Gran Espresso
+            </h3>
+            <p class="font-barlow text-[16px] leading-[26px]">
+              Light and flavorful blend with cocoa and black pepper for an
+              intense experience.
+            </p>
+          </div>
+        </div>
+        <div
+          class="text-center flex flex-col md:flex-row xl:flex-col items-center justify-center"
+        >
+          <img
+            src="images/planalto.png"
+            alt="coffee"
+            class="xl:mb-[71px] md:w-[50%]"
+          />
+          <div class="text-center md:text-start xl:text-center">
+            <h3 class="text-[24px] leading-6 xl:leading-8 mb-6">Planalto</h3>
+            <p class="font-barlow text-[16px] leading-[26px]">
+              Brazilian dark roast with rich and velvety body, and hints of
+              fruits and nuts.
+            </p>
+          </div>
+        </div>
+        <div
+          class="text-center flex flex-col md:flex-row xl:flex-col items-center justify-center"
+        >
+          <img
+            src="images/pihhollo.png"
+            alt="coffee"
+            class="xl:mb-[71px] md:w-[50%]"
+          />
+          <div class="text-center md:text-start xl:text-center">
+            <h3 class="text-[24px] leading-6 xl:leading-8 mb-6">Piccollo</h3>
+            <p class="font-barlow text-[16px] leading-[26px]">
+              Mild and smooth blend featuring notes of toasted almond and dried
+              cherry.
+            </p>
+          </div>
+        </div>
+        <div
+          class="text-center flex flex-col md:flex-row xl:flex-col items-center justify-center"
+        >
+          <img
+            src="images/danche.png"
+            alt="coffee"
+            class="xl:mb-[71px] md:w-[50%]"
+          />
+          <div class="text-center md:text-start xl:text-center">
+            <h3 class="text-[24px] leading-6 xl:leading-8 mb-6">Danche</h3>
+            <p class="font-barlow text-[16px] leading-[26px]">
+              Ethiopian hand-harvested blend densely packed with vibrant fruit
+              notes.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="relative rounded-[10px] bg-primary mt-[120px] md:mt-[130px] xl:mt-48 text-bkround px-6 pt-16 md:px-14 xl:pt-[100px] xl:px-[85px] flex flex-col items-center text-center h-[902px] md:h-[577px]"
+    >
+      <h3
+        class="font-fraunces text-[28px] leading-7 md:text-[32px] xl:text-[40px] md:leading-[48px] mb-6"
+      >
+        Why choose us?
+      </h3>
+      <p
+        class="font-barlow text-[15px] leading-[25px] xl:text-[16px] xl:leading-[26px] md:w-[540px] opacity-80"
+      >
+        A large part of our role is choosing which particular coffees will be
+        featured in our range. This means working closely with the best coffee
+        growers to give you a more impactful experience on every level.
+      </p>
+      <div
+        class="grid xl:grid-cols-3 gap-6 xl:gap-[30px] text-bkround absolute bottom-0 translate-y-[50%] w-[90%]"
+      >
+        <div
+          class="bg-secondary rounded-lg flex items-center flex-col md:flex-row xl:flex-col px-[33.5px] pt-[72px] pb-[51px] md:p-[41px] xl:p-12 xl:pt-[72px] gap-14"
+        >
+          <img src="images/bean.png" alt="bean" />
+          <div
+            class="space-y-6 md:space-y-3 md:text-start xl:text-center xl:space-y-6"
+          >
+            <h3 class="font-fraunces leading-8 text-[24px]">Best quality</h3>
+            <p
+              class="font-barlow leading-[25px] text-[15px] xl:leading-[26px] xl:text-[16px]"
+            >
+              Discover an endless variety of the world’s best artisan coffee
+              from each of our roasters.
+            </p>
+          </div>
+        </div>
+        <div
+          class="bg-secondary rounded-lg flex items-center flex-col md:flex-row xl:flex-col px-[33.5px] pt-[72px] pb-[51px] md:p-[41px] xl:p-12 xl:pt-[72px] gap-14"
+        >
+          <img src="images/gift.svg" alt="gift" />
+          <div
+            class="space-y-6 md:space-y-3 md:text-start xl:text-center xl:space-y-6"
+          >
+            <h3 class="font-fraunces leading-8 text-[24px]">
+              Exclusive benefits
+            </h3>
+            <p
+              class="font-barlow leading-[25px] text-[15px] xl:leading-[26px] xl:text-[16px]"
+            >
+              Special offers and swag when you subscribe, including 30% off your
+              first shipment.
+            </p>
+          </div>
+        </div>
+        <div
+          class="bg-secondary rounded-lg flex items-center flex-col md:flex-row xl:flex-col px-[33.5px] pt-[72px] pb-[51px] md:p-[41px] xl:p-12 xl:pt-[72px] gap-14"
+        >
+          <img src="images/car.png" alt="car" class="h-[72px]" />
+          <div
+            class="space-y-6 md:space-y-3 md:text-start xl:text-center xl:space-y-6"
+          >
+            <h3 class="font-fraunces leading-8 text-[24px]">Free shipping</h3>
+            <p
+              class="font-barlow leading-[25px] text-[15px] xl:leading-[26px] xl:text-[16px]"
+            >
+              We cover the cost and coffee is delivered fast. Peak freshness:
+              guaranteed.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="xl:pl-[85px] text-center md:text-start">
+      <h3
+        class="text-headers font-fraunces text-[24px] leading-8 mt-[717px] md:mt-[434px] xl:mt-[350px] md:text-start"
+      >
+        How it works
+      </h3>
+      <div
+        class="hidden md:flex md:w-[467px] lg:w-[760px] xl:w-[70%] h-0.5 bg-nums justify-between items-center md:mt-14 md:mb-12 xl:mt-20 xl:mb-[67px]"
+      >
+        <img src="images/circle.svg" alt="circle" />
+        <img src="images/circle.svg" alt="circle" />
+        <img src="images/circle.svg" alt="circle" />
+      </div>
+      <div
+        class="grid md:grid-cols-3 gap-14 md:gap-2.5 xl:gap-[95px] mt-20 md:mt-0"
+      >
+        <div
+          class="text-center md:text-start flex flex-col items-center md:items-start"
+        >
+          <h3
+            class="text-[72px] leading-[72px] text-nums font-fraunces mb-6 md:mb-10 xl:mb-9"
+          >
+            01
+          </h3>
+          <h4
+            class="text-[24px] leading-8 xl:text-[32px] xl:leading-9 font-fraunces mb-6 md:mb-9 text-primary xl:mb-10 md:w-[180px]"
+          >
+            Pick your coffee
+          </h4>
+          <p
+            class="text-[15px] leading-[25px] xl:text-[16px] xl:leading-[26px] font-barlow text-primary"
+          >
+            Select from our evolving range of artisan coffees. Our beans are
+            ethically sourced and we pay fair prices for them. There are new
+            coffees in all profiles every month for you to try out.
+          </p>
+        </div>
+        <div
+          class="text-center md:text-start flex flex-col items-center md:items-start"
+        >
+          <h3
+            class="text-[72px] leading-[72px] text-nums font-fraunces mb-6 md:mb-10 xl:mb-9"
+          >
+            02
+          </h3>
+          <h4
+            class="text-[24px] leading-8 xl:text-[32px] xl:leading-9 font-fraunces mb-6 md:mb-9 text-primary xl:mb-10 md:w-[200px]"
+          >
+            Choose the frequency
+          </h4>
+          <p
+            class="text-[15px] leading-[25px] xl:text-[16px] xl:leading-[26px] font-barlow text-primary"
+          >
+            Customize your order frequency, quantity, even your roast style and
+            grind type. Pause, skip or cancel your subscription with no
+            commitment through our online portal.
+          </p>
+        </div>
+        <div
+          class="text-center md:text-start flex flex-col items-center md:items-start"
+        >
+          <h3
+            class="text-[72px] leading-[72px] text-nums font-fraunces mb-6 md:mb-10 xl:mb-9"
+          >
+            03
+          </h3>
+          <h4
+            class="text-[24px] leading-8 xl:text-[32px] xl:leading-9 font-fraunces mb-6 md:mb-9 text-primary xl:mb-10 md:w-[200px]"
+          >
+            Receive and enjoy!
+          </h4>
+          <p
+            class="text-[15px] leading-[25px] xl:text-[16px] xl:leading-[26px] font-barlow text-primary"
+          >
+            We ship your package within 48 hours, freshly roasted. Sit back and
+            enjoy award-winning world-class coffees curated to provide a
+            distinct tasting experience.
+          </p>
+        </div>
+      </div>
+      <button
+        class="font-fraunces leading-[25px] text-[18px] text-bkround bg-secondary rounded-md px-[31px] py-[15px] mt-20 md:mt-11 xl:mt-16 hover:bg-[#66D2CF] disabled:bg-[#E2DEDB]"
+      >
+        Create your plan
+      </button>
+    </section>
+    <footer
+      class="p-14 xl:py-12 xl:px-[85px] bg-primary font-barlow text-headers mt-[120px] md:mt-36 xl:mt-[200px] flex flex-col xl:flex-row items-center xl:justify-between mb-[72px] xl:mb-[88px]"
+    >
+      <div class="flex lg:gap-[102px] flex-col xl:flex-row items-center">
+        <img
+          src="images/logo2.png"
+          alt="logo"
+          class="mb-12 md:mb-8 xl:mb-0.5 w-[236px]"
+        />
+        <ul class="flex flex-col md:flex-row items-center gap-6 md:gap-[33px]">
+          <li><a href="/">HOME</a></li>
+          <li><a href="about.html">ABOUT US</a></li>
+          <li><a href="#">CREATE YOUR PLAN</a></li>
+        </ul>
+      </div>
+      <img
+        src="images/socials.svg"
+        alt="socials"
+        class="w-[120px] mt-12 md:mt-[65px] xl:mt-0"
+      />
+    </footer>
+  </body>
+</html>
